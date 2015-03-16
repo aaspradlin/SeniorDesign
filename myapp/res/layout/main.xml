@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+              android:weightSum="1" android:id="@+id/schema" android:orientation="vertical">
+    <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" android:layout_weight="0.98" android:weightSum="1">
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Ride Me"
+                android:textSize="50sp"
+                android:textColor="#fffdfffd"
+                android:id="@+id/textView" android:layout_gravity="center_horizontal"/>
+        <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="Ride Me"
+                android:textSize="15sp"
+                android:textColor="#fffdfffd"
+                android:id="@+id/errorText"
+                android:layout_gravity="center_horizontal"/>
+        <Button
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:text="Full Speed"
+                android:textSize="50sp"
+                android:textColor="#ff17ff00"
+                android:id="@+id/fullSpeed"
+                android:onClick="fullSpeed"
+                android:layout_gravity="center_horizontal"/>
+        <Button
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:text="Half Speed"
+                android:onClick="halfSpeed"
+                android:textSize="50sp"
+                android:textColor="#ffffe506"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/halfSpeed"/>
+        <Button
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:text="Stop"
+                android:onClick="stop"
+                android:textSize="50sp"
+                android:textColor="#ffffe506"
+                android:layout_gravity="center_horizontal"
+                android:id="@+id/justStop"/>
+        <Button
+                android:layout_width="300dp"
+                android:layout_height="80dp"
+                android:text="E-Stop"
+                android:textSize="50sp"
+                android:textColor="#ffff070f"
+                android:id="@+id/eStopButton"
+                android:layout_gravity="center_horizontal"
+                android:onClick="eStop"/>
+    </LinearLayout>
+</LinearLayout>
+
